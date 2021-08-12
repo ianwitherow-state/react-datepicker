@@ -89,6 +89,7 @@ export default class PopperComponent extends React.Component {
 
     return (
       <Manager className="react-datepicker-manager">
+        {popper}
         <Reference>
           {({ ref }) => (
             <div ref={ref} className={wrapperClasses}>
@@ -96,7 +97,6 @@ export default class PopperComponent extends React.Component {
             </div>
           )}
         </Reference>
-        {popper}
       </Manager>
     );
   }
